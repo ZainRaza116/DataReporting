@@ -1,0 +1,17 @@
+{% extends "admin/change_list.html" %}
+{% load i18n %}
+{% block search %}
+{{ block.super }}
+
+    <h1>
+        Total Refund = <strong>{{ refund }}</strong>
+    </h1>
+    <h1>
+        Total Sent = <strong>{{ send }}</strong>
+    </h1>
+    <h1>
+        Grand Total = <strong>{{ grand_total }}</strong>
+    </h1>
+
+
+{% endblock %}
